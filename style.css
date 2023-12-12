@@ -6,22 +6,31 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #272333;
     height: 100vh;
-
 }
-.container { 
+#container { 
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 80%;
     gap:20px;
 }
-.sidebar{
+
+#sidebar{
     background-color:#403c52;
     width: 200px;
     height: 500px;
     border-radius: 10px;
     padding: 30px;
     color:white;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 29px;
+    font-weight: bold;
+    line-height: 10px;
 }
 
 .foto{
@@ -45,16 +54,44 @@ body {
     font-size: 15px;
     line-height: 10px;
 }
-
-.name{
+.icons{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 29px;
-    font-weight: bold;
+    justify-content: center;
+    cursor: pointer;
 }
 
-.bio{
+.icons i{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+a:hover i {
+    transform: scale(1.5);
+}
+.instagram:hover {
+    color: #e11d74;
+}
+.github:hover {
+    color: black;
+}
+.linkedin:hover {
+    color: #04009a;
+}
+.whatsapp:hover {
+    color: #059862;
+}
+
+.infos{
+    width: 30px;
+    height: 30px;
+ }
+ 
+.calendario{
+    display: flex;
+    align-items: center;
+}
+
+#bio{
     background-color:#403c52;
     width: 800px;
     height: 500px;
@@ -64,7 +101,7 @@ body {
 }
 .title{
     font-size: 23px;
-    font-family: 'Rethink Sans', sans-serif;
+    line-height: 10px;
 }
 .bar{
     width:50px;
